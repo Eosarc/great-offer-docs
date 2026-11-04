@@ -23,12 +23,15 @@
     ko: ["이전", "다음"],
   };
 
-  function enhancePage() {
+  function normalizeTitle() {
     const titleSuffix = " - Great Offer AI";
     if (document.title.endsWith(titleSuffix)) {
       document.title = document.title.slice(0, -titleSuffix.length) + " | Great Offer AI";
     }
+  }
 
+  function enhancePage() {
+    normalizeTitle();
     const language = document.documentElement.lang.toLowerCase();
     const locale = language.startsWith("zh") ? "cn" : language === "ja" ? "jp" : language;
     const [previous, next] = labels[locale] || labels.en;
@@ -69,4 +72,8 @@
 
   enhancePage();
   window.addEventListener("mintlify:navigate", enhancePage);
+  // Hosted metadata can settle after the page event. Observe only the small
+  // document head so a late title update keeps the same brand separator.
+  const titleObserver = new MutationObserver(normalizeTitle);
+  titleObserver.observe(document.head, { childList: true, subtree: true, characterData: true });
 })();
