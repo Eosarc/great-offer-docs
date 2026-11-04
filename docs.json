@@ -1,53 +1,676 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Great Offer AI",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "language": "en",
+        "default": true,
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "en/index"
+            ]
+          },
+          {
+            "group": "Getting started",
+            "pages": [
+              "en/getting-started/install-and-sign-in",
+              "en/quickstart",
+              "en/getting-started/workspace-and-session",
+              "en/setup/permissions"
+            ]
+          },
+          {
+            "group": "Prepare for interviews",
+            "pages": [
+              "en/preparation/resumes",
+              "en/preparation/jobs",
+              "en/preparation/knowledge-base",
+              "en/preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "Launch and answer settings",
+            "pages": [
+              "en/launch/configuration",
+              "en/launch/models-and-language",
+              "en/launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "Use the live assistant",
+            "pages": [
+              "en/assistant/overview",
+              "en/assistant/audio",
+              "en/assistant/auto-and-manual",
+              "en/assistant/text-chat",
+              "en/assistant/screen-analysis",
+              "en/assistant/window-controls",
+              "en/assistant/end-session"
+            ]
+          },
+          {
+            "group": "Interview practice",
+            "pages": [
+              "en/practice/rehearse"
+            ]
+          },
+          {
+            "group": "Review interviews",
+            "pages": [
+              "en/review/records",
+              "en/review/summary",
+              "en/review/qa-and-transcript",
+              "en/review/improvement"
+            ]
+          },
+          {
+            "group": "App settings",
+            "pages": [
+              "en/settings/preferences",
+              "en/settings/updates"
+            ]
+          },
+          {
+            "group": "Account and access",
+            "pages": [
+              "en/account/plans-and-trial",
+              "en/account/usage",
+              "en/account/billing"
+            ]
+          },
+          {
+            "group": "Privacy and support",
+            "pages": [
+              "en/privacy/stealth",
+              "en/privacy/data",
+              "en/support/contact"
+            ]
+          },
+          {
+            "group": "Quick answers",
+            "pages": [
+              "en/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "FAQ",
+              "href": "/en/faq"
+            },
+            {
+              "label": "Contact support",
+              "href": "mailto:support@greatoffer.ai"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Visit website",
+            "href": "https://greatoffer.ai/"
+          }
+        }
+      },
+      {
+        "language": "es",
+        "groups": [
+          {
+            "group": "Bienvenida",
+            "pages": [
+              "es/index"
+            ]
+          },
+          {
+            "group": "Primeros pasos",
+            "pages": [
+              "es/getting-started/install-and-sign-in",
+              "es/quickstart",
+              "es/getting-started/workspace-and-session",
+              "es/setup/permissions"
+            ]
+          },
+          {
+            "group": "Preparar entrevistas",
+            "pages": [
+              "es/preparation/resumes",
+              "es/preparation/jobs",
+              "es/preparation/knowledge-base",
+              "es/preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "Inicio y respuestas",
+            "pages": [
+              "es/launch/configuration",
+              "es/launch/models-and-language",
+              "es/launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "Asistente en tiempo real",
+            "pages": [
+              "es/assistant/overview",
+              "es/assistant/audio",
+              "es/assistant/auto-and-manual",
+              "es/assistant/text-chat",
+              "es/assistant/screen-analysis",
+              "es/assistant/window-controls",
+              "es/assistant/end-session"
+            ]
+          },
+          {
+            "group": "Práctica de entrevistas",
+            "pages": [
+              "es/practice/rehearse"
+            ]
+          },
+          {
+            "group": "Revisar entrevistas",
+            "pages": [
+              "es/review/records",
+              "es/review/summary",
+              "es/review/qa-and-transcript",
+              "es/review/improvement"
+            ]
+          },
+          {
+            "group": "Ajustes de la aplicación",
+            "pages": [
+              "es/settings/preferences",
+              "es/settings/updates"
+            ]
+          },
+          {
+            "group": "Cuenta y acceso",
+            "pages": [
+              "es/account/plans-and-trial",
+              "es/account/usage",
+              "es/account/billing"
+            ]
+          },
+          {
+            "group": "Privacidad y soporte",
+            "pages": [
+              "es/privacy/stealth",
+              "es/privacy/data",
+              "es/support/contact"
+            ]
+          },
+          {
+            "group": "Respuestas rápidas",
+            "pages": [
+              "es/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "Preguntas frecuentes",
+              "href": "/es/faq"
+            },
+            {
+              "label": "Soporte",
+              "href": "mailto:support@greatoffer.ai"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Visitar la web",
+            "href": "https://greatoffer.ai/"
+          }
+        }
+      },
+      {
+        "language": "fr",
+        "groups": [
+          {
+            "group": "Bienvenue",
+            "pages": [
+              "fr/index"
+            ]
+          },
+          {
+            "group": "Premiers pas",
+            "pages": [
+              "fr/getting-started/install-and-sign-in",
+              "fr/quickstart",
+              "fr/getting-started/workspace-and-session",
+              "fr/setup/permissions"
+            ]
+          },
+          {
+            "group": "Préparer les entretiens",
+            "pages": [
+              "fr/preparation/resumes",
+              "fr/preparation/jobs",
+              "fr/preparation/knowledge-base",
+              "fr/preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "Lancement et réponses",
+            "pages": [
+              "fr/launch/configuration",
+              "fr/launch/models-and-language",
+              "fr/launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "Assistant en temps réel",
+            "pages": [
+              "fr/assistant/overview",
+              "fr/assistant/audio",
+              "fr/assistant/auto-and-manual",
+              "fr/assistant/text-chat",
+              "fr/assistant/screen-analysis",
+              "fr/assistant/window-controls",
+              "fr/assistant/end-session"
+            ]
+          },
+          {
+            "group": "Entraînement",
+            "pages": [
+              "fr/practice/rehearse"
+            ]
+          },
+          {
+            "group": "Analyser les entretiens",
+            "pages": [
+              "fr/review/records",
+              "fr/review/summary",
+              "fr/review/qa-and-transcript",
+              "fr/review/improvement"
+            ]
+          },
+          {
+            "group": "Paramètres",
+            "pages": [
+              "fr/settings/preferences",
+              "fr/settings/updates"
+            ]
+          },
+          {
+            "group": "Compte et accès",
+            "pages": [
+              "fr/account/plans-and-trial",
+              "fr/account/usage",
+              "fr/account/billing"
+            ]
+          },
+          {
+            "group": "Confidentialité et assistance",
+            "pages": [
+              "fr/privacy/stealth",
+              "fr/privacy/data",
+              "fr/support/contact"
+            ]
+          },
+          {
+            "group": "Réponses rapides",
+            "pages": [
+              "fr/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "FAQ",
+              "href": "/fr/faq"
+            },
+            {
+              "label": "Assistance",
+              "href": "mailto:support@greatoffer.ai"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Voir le site",
+            "href": "https://greatoffer.ai/"
+          }
+        }
+      },
+      {
+        "language": "jp",
+        "groups": [
+          {
+            "group": "ようこそ",
+            "pages": [
+              "jp/index"
+            ]
+          },
+          {
+            "group": "はじめに",
+            "pages": [
+              "jp/getting-started/install-and-sign-in",
+              "jp/quickstart",
+              "jp/getting-started/workspace-and-session",
+              "jp/setup/permissions"
+            ]
+          },
+          {
+            "group": "面接の準備",
+            "pages": [
+              "jp/preparation/resumes",
+              "jp/preparation/jobs",
+              "jp/preparation/knowledge-base",
+              "jp/preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "起動と回答設定",
+            "pages": [
+              "jp/launch/configuration",
+              "jp/launch/models-and-language",
+              "jp/launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "リアルタイムアシスタント",
+            "pages": [
+              "jp/assistant/overview",
+              "jp/assistant/audio",
+              "jp/assistant/auto-and-manual",
+              "jp/assistant/text-chat",
+              "jp/assistant/screen-analysis",
+              "jp/assistant/window-controls",
+              "jp/assistant/end-session"
+            ]
+          },
+          {
+            "group": "面接練習",
+            "pages": [
+              "jp/practice/rehearse"
+            ]
+          },
+          {
+            "group": "面接の振り返り",
+            "pages": [
+              "jp/review/records",
+              "jp/review/summary",
+              "jp/review/qa-and-transcript",
+              "jp/review/improvement"
+            ]
+          },
+          {
+            "group": "アプリ設定",
+            "pages": [
+              "jp/settings/preferences",
+              "jp/settings/updates"
+            ]
+          },
+          {
+            "group": "アカウントと利用枠",
+            "pages": [
+              "jp/account/plans-and-trial",
+              "jp/account/usage",
+              "jp/account/billing"
+            ]
+          },
+          {
+            "group": "プライバシーとサポート",
+            "pages": [
+              "jp/privacy/stealth",
+              "jp/privacy/data",
+              "jp/support/contact"
+            ]
+          },
+          {
+            "group": "よくある質問",
+            "pages": [
+              "jp/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "よくある質問",
+              "href": "/jp/faq"
+            },
+            {
+              "label": "サポート",
+              "href": "mailto:support@greatoffer.ai"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "公式サイト",
+            "href": "https://greatoffer.ai/"
+          }
+        }
+      },
+      {
+        "language": "ko",
+        "groups": [
+          {
+            "group": "환영합니다",
+            "pages": [
+              "ko/index"
+            ]
+          },
+          {
+            "group": "시작하기",
+            "pages": [
+              "ko/getting-started/install-and-sign-in",
+              "ko/quickstart",
+              "ko/getting-started/workspace-and-session",
+              "ko/setup/permissions"
+            ]
+          },
+          {
+            "group": "면접 준비",
+            "pages": [
+              "ko/preparation/resumes",
+              "ko/preparation/jobs",
+              "ko/preparation/knowledge-base",
+              "ko/preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "시작 및 답변 설정",
+            "pages": [
+              "ko/launch/configuration",
+              "ko/launch/models-and-language",
+              "ko/launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "실시간 어시스턴트",
+            "pages": [
+              "ko/assistant/overview",
+              "ko/assistant/audio",
+              "ko/assistant/auto-and-manual",
+              "ko/assistant/text-chat",
+              "ko/assistant/screen-analysis",
+              "ko/assistant/window-controls",
+              "ko/assistant/end-session"
+            ]
+          },
+          {
+            "group": "면접 연습",
+            "pages": [
+              "ko/practice/rehearse"
+            ]
+          },
+          {
+            "group": "면접 복기",
+            "pages": [
+              "ko/review/records",
+              "ko/review/summary",
+              "ko/review/qa-and-transcript",
+              "ko/review/improvement"
+            ]
+          },
+          {
+            "group": "앱 설정",
+            "pages": [
+              "ko/settings/preferences",
+              "ko/settings/updates"
+            ]
+          },
+          {
+            "group": "계정과 이용 권한",
+            "pages": [
+              "ko/account/plans-and-trial",
+              "ko/account/usage",
+              "ko/account/billing"
+            ]
+          },
+          {
+            "group": "개인정보와 지원",
+            "pages": [
+              "ko/privacy/stealth",
+              "ko/privacy/data",
+              "ko/support/contact"
+            ]
+          },
+          {
+            "group": "자주 묻는 질문",
+            "pages": [
+              "ko/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "자주 묻는 질문",
+              "href": "/ko/faq"
+            },
+            {
+              "label": "지원 문의",
+              "href": "mailto:support@greatoffer.ai"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "웹사이트",
+            "href": "https://greatoffer.ai/"
+          }
+        }
+      },
+      {
+        "language": "cn",
+        "groups": [
+          {
+            "group": "欢迎",
+            "pages": [
+              "cn/index"
+            ]
+          },
+          {
+            "group": "快速开始",
+            "pages": [
+              "getting-started/install-and-sign-in",
+              "quickstart",
+              "getting-started/workspace-and-session",
+              "setup/permissions"
+            ]
+          },
+          {
+            "group": "面试准备",
+            "pages": [
+              "preparation/resumes",
+              "preparation/jobs",
+              "preparation/knowledge-base",
+              "preparation/materials-guide"
+            ]
+          },
+          {
+            "group": "启动与回答设置",
+            "pages": [
+              "launch/configuration",
+              "launch/models-and-language",
+              "launch/answer-preferences"
+            ]
+          },
+          {
+            "group": "使用实时助手",
+            "pages": [
+              "assistant/overview",
+              "assistant/audio",
+              "assistant/auto-and-manual",
+              "assistant/text-chat",
+              "assistant/screen-analysis",
+              "assistant/window-controls",
+              "assistant/end-session"
+            ]
+          },
+          {
+            "group": "面试练习",
+            "pages": [
+              "practice/rehearse"
+            ]
+          },
+          {
+            "group": "面试复盘",
+            "pages": [
+              "review/records",
+              "review/summary",
+              "review/qa-and-transcript",
+              "review/improvement"
+            ]
+          },
+          {
+            "group": "应用设置",
+            "pages": [
+              "settings/preferences",
+              "settings/updates"
+            ]
+          },
+          {
+            "group": "账户与额度",
+            "pages": [
+              "account/plans-and-trial",
+              "account/usage",
+              "account/billing"
+            ]
+          },
+          {
+            "group": "隐私与支持",
+            "pages": [
+              "privacy/stealth",
+              "privacy/data",
+              "support/contact"
+            ]
+          },
+          {
+            "group": "快速解答",
+            "pages": [
+              "faq"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "label": "常见问题",
+        "href": "/faq"
+      },
+      {
+        "label": "联系支持",
+        "href": "mailto:support@greatoffer.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "访问官网",
+      "href": "https://greatoffer.ai/"
     }
   },
   "contextual": {
@@ -62,11 +685,16 @@
       "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "description": "Great Offer AI 使用指南：准备面试资料、配置实时助手、完成问答并回看面试报告。",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en",
+      "permanent": false
     }
-  }
+  ]
 }

@@ -1,0 +1,111 @@
+/* The project assistant is disabled in Mintlify. Keep the local preview aligned. */
+[data-layout-item="assistant-entry"],
+.chat-assistant-floating-input,
+div:has(> #chat-assistant-sheet),
+[data-component-part="search-ask-ai-button"],
+[data-search-item="group"][data-variant="ask-ai"] {
+  display: none !important;
+}
+
+/* Keep the native Mintlify attribution as the only footer item. */
+#footer {
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Preserve Mintlify's links and focus states while presenting page cards. */
+#pagination {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+
+#pagination > a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 0.25rem;
+  row-gap: 0.25rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(229 231 235 / 70%);
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+#pagination > a:hover {
+  border-color: rgb(209 213 219);
+}
+
+#pagination [data-component-part="pagination-title"] {
+  grid-area: 1 / 1 / 2 / -1;
+  color: rgb(17 24 39);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#pagination [data-component-part="pagination-label"] {
+  grid-area: 2 / 2;
+  color: rgb(107 114 128);
+  line-height: 1.25rem;
+}
+
+#pagination [data-component-part="pagination-chevron"] {
+  grid-area: 2 / 1;
+  width: 0.625rem;
+  height: 0.625rem;
+  justify-self: start;
+  color: rgb(156 163 175);
+  stroke: currentColor;
+}
+
+#pagination [data-component-part="pagination-chevron"] path {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1.5px;
+}
+
+#pagination > [data-component-part="pagination-next"] {
+  grid-template-columns: minmax(0, 1fr) auto;
+  text-align: right;
+}
+
+#pagination [data-component-part="pagination-next"] [data-component-part="pagination-label"] {
+  grid-column: 1;
+}
+
+#pagination [data-component-part="pagination-next"] [data-component-part="pagination-chevron"] {
+  grid-column: 2;
+  justify-self: end;
+}
+
+html.dark #pagination > a {
+  border-color: rgb(31 41 55 / 70%);
+}
+
+html.dark #pagination > a:hover {
+  border-color: rgb(55 65 81);
+}
+
+html.dark #pagination [data-component-part="pagination-title"] {
+  color: rgb(229 231 235);
+}
+
+html.dark #pagination [data-component-part="pagination-label"] {
+  color: rgb(156 163 175);
+}
+
+@media (min-width: 1024px) {
+  #pagination {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #pagination > [data-component-part="pagination-next"] {
+    grid-column: 2;
+  }
+}

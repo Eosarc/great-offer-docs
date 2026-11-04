@@ -1,55 +1,30 @@
-# Mintlify Starter Kit
+# Great Offer AI 帮助中心
 
-Use the starter kit to get your docs deployed and ready to customize.
+Great Offer AI 桌面应用帮助中心。提供 English、Español、Français、日本語、한국어、简体中文六种语言，每种语言 33 页，共 198 页。使用 Mintlify 的 `mint` 主题，默认语言为英文。
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 本地预览
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+在本目录运行：
 
 ```bash
-npx skills add https://mintlify.com/docs
+mint dev --no-open
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+在浏览器访问命令输出的本地地址，通常为 `http://localhost:3000`。Mintlify 需要通过开发服务预览，直接双击 MDX 文件不会显示文档站。
 
-See the guides for [Claude Code](https://www.mintlify.com/docs/guides/claude-code), [Codex](https://www.mintlify.com/docs/guides/codex), [Cursor](https://www.mintlify.com/docs/guides/cursor), and [Devin Desktop](https://www.mintlify.com/docs/guides/devin-desktop) for tool-specific setup.
+## 内容组织
 
-## Development
+页面为带 `title`、`description` 的 MDX，目录在 `docs.json` 中配置。根路径进入 `/en`；中文首页为 `/cn`，中文正文保留原地址；其余语言分别位于 `en/`、`es/`、`fr/`、`jp/`、`ko/`。内容按准备、启动、助手使用、练习、复盘、设置、账户与隐私支持分目录。
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+规则与内容修改须同步六种语言。客户端配图统一使用真实英文界面，文件位于 `images/client/`，图注与替代文本跟随页面语言。`style.css` 和 `docs-ui.js` 保留品牌、分页、标题与中文页脚展示；普通搜索保留，原生助手关闭。
 
-```
-npm i -g mint
-```
+## 内容检查
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
+```bash
+mint validate
+mint broken-links
 ```
 
-View your local preview at `http://localhost:3000`.
+## 发布
 
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+将经过检查的公开页面、配置和图片提交到本仓库的 `main` 分支，由已连接的 Mintlify 项目部署。发布后检查线上首页、六语言导航与图片。内部维护记录不属于公开站点内容。
