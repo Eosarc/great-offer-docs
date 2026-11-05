@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Great Offer AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3F3CBF",
+    "light": "#4240C1",
+    "dark": "#7A85FF"
   },
   "favicon": "/favicon.png",
   "navigation": {

@@ -20,6 +20,8 @@ div:has(> #chat-assistant-sheet),
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   padding: 0;
+  /* Separate the cards from the footer’s top border. */
+  margin-bottom: 2rem;
 }
 
 #pagination > a {
