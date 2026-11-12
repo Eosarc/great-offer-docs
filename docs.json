@@ -342,94 +342,94 @@
         }
       },
       {
-        "language": "jp",
+        "language": "ja",
         "groups": [
           {
             "group": "ようこそ",
             "pages": [
-              "jp/index"
+              "ja/index"
             ]
           },
           {
             "group": "はじめに",
             "pages": [
-              "jp/getting-started/install-and-sign-in",
-              "jp/quickstart",
-              "jp/getting-started/workspace-and-session",
-              "jp/setup/permissions"
+              "ja/getting-started/install-and-sign-in",
+              "ja/quickstart",
+              "ja/getting-started/workspace-and-session",
+              "ja/setup/permissions"
             ]
           },
           {
             "group": "面接の準備",
             "pages": [
-              "jp/preparation/resumes",
-              "jp/preparation/jobs",
-              "jp/preparation/knowledge-base",
-              "jp/preparation/materials-guide"
+              "ja/preparation/resumes",
+              "ja/preparation/jobs",
+              "ja/preparation/knowledge-base",
+              "ja/preparation/materials-guide"
             ]
           },
           {
             "group": "起動と回答設定",
             "pages": [
-              "jp/launch/configuration",
-              "jp/launch/models-and-language",
-              "jp/launch/answer-preferences"
+              "ja/launch/configuration",
+              "ja/launch/models-and-language",
+              "ja/launch/answer-preferences"
             ]
           },
           {
             "group": "リアルタイムアシスタント",
             "pages": [
-              "jp/assistant/overview",
-              "jp/assistant/audio",
-              "jp/assistant/auto-and-manual",
-              "jp/assistant/text-chat",
-              "jp/assistant/screen-analysis",
-              "jp/assistant/window-controls",
-              "jp/assistant/end-session"
+              "ja/assistant/overview",
+              "ja/assistant/audio",
+              "ja/assistant/auto-and-manual",
+              "ja/assistant/text-chat",
+              "ja/assistant/screen-analysis",
+              "ja/assistant/window-controls",
+              "ja/assistant/end-session"
             ]
           },
           {
             "group": "面接練習",
             "pages": [
-              "jp/practice/rehearse"
+              "ja/practice/rehearse"
             ]
           },
           {
             "group": "面接の振り返り",
             "pages": [
-              "jp/review/records",
-              "jp/review/summary",
-              "jp/review/qa-and-transcript",
-              "jp/review/improvement"
+              "ja/review/records",
+              "ja/review/summary",
+              "ja/review/qa-and-transcript",
+              "ja/review/improvement"
             ]
           },
           {
             "group": "アプリ設定",
             "pages": [
-              "jp/settings/preferences",
-              "jp/settings/updates"
+              "ja/settings/preferences",
+              "ja/settings/updates"
             ]
           },
           {
             "group": "アカウントと利用枠",
             "pages": [
-              "jp/account/plans-and-trial",
-              "jp/account/usage",
-              "jp/account/billing"
+              "ja/account/plans-and-trial",
+              "ja/account/usage",
+              "ja/account/billing"
             ]
           },
           {
             "group": "プライバシーとサポート",
             "pages": [
-              "jp/privacy/stealth",
-              "jp/privacy/data",
-              "jp/support/contact"
+              "ja/privacy/stealth",
+              "ja/privacy/data",
+              "ja/support/contact"
             ]
           },
           {
             "group": "よくある質問",
             "pages": [
-              "jp/faq"
+              "ja/faq"
             ]
           }
         ],
@@ -562,94 +562,94 @@
         }
       },
       {
-        "language": "cn",
+        "language": "zh",
         "groups": [
           {
             "group": "欢迎",
             "pages": [
-              "cn/index"
+              "zh/index"
             ]
           },
           {
             "group": "快速开始",
             "pages": [
-              "getting-started/install-and-sign-in",
-              "quickstart",
-              "getting-started/workspace-and-session",
-              "setup/permissions"
+              "zh/getting-started/install-and-sign-in",
+              "zh/quickstart",
+              "zh/getting-started/workspace-and-session",
+              "zh/setup/permissions"
             ]
           },
           {
             "group": "面试准备",
             "pages": [
-              "preparation/resumes",
-              "preparation/jobs",
-              "preparation/knowledge-base",
-              "preparation/materials-guide"
+              "zh/preparation/resumes",
+              "zh/preparation/jobs",
+              "zh/preparation/knowledge-base",
+              "zh/preparation/materials-guide"
             ]
           },
           {
             "group": "启动与回答设置",
             "pages": [
-              "launch/configuration",
-              "launch/models-and-language",
-              "launch/answer-preferences"
+              "zh/launch/configuration",
+              "zh/launch/models-and-language",
+              "zh/launch/answer-preferences"
             ]
           },
           {
             "group": "使用实时助手",
             "pages": [
-              "assistant/overview",
-              "assistant/audio",
-              "assistant/auto-and-manual",
-              "assistant/text-chat",
-              "assistant/screen-analysis",
-              "assistant/window-controls",
-              "assistant/end-session"
+              "zh/assistant/overview",
+              "zh/assistant/audio",
+              "zh/assistant/auto-and-manual",
+              "zh/assistant/text-chat",
+              "zh/assistant/screen-analysis",
+              "zh/assistant/window-controls",
+              "zh/assistant/end-session"
             ]
           },
           {
             "group": "面试练习",
             "pages": [
-              "practice/rehearse"
+              "zh/practice/rehearse"
             ]
           },
           {
             "group": "面试复盘",
             "pages": [
-              "review/records",
-              "review/summary",
-              "review/qa-and-transcript",
-              "review/improvement"
+              "zh/review/records",
+              "zh/review/summary",
+              "zh/review/qa-and-transcript",
+              "zh/review/improvement"
             ]
           },
           {
             "group": "应用设置",
             "pages": [
-              "settings/preferences",
-              "settings/updates"
+              "zh/settings/preferences",
+              "zh/settings/updates"
             ]
           },
           {
             "group": "账户与额度",
             "pages": [
-              "account/plans-and-trial",
-              "account/usage",
-              "account/billing"
+              "zh/account/plans-and-trial",
+              "zh/account/usage",
+              "zh/account/billing"
             ]
           },
           {
             "group": "隐私与支持",
             "pages": [
-              "privacy/stealth",
-              "privacy/data",
-              "support/contact"
+              "zh/privacy/stealth",
+              "zh/privacy/data",
+              "zh/support/contact"
             ]
           },
           {
             "group": "快速解答",
             "pages": [
-              "faq"
+              "zh/faq"
             ]
           }
         ]
@@ -660,7 +660,7 @@
     "links": [
       {
         "label": "常见问题",
-        "href": "/faq"
+        "href": "/zh/faq"
       },
       {
         "label": "联系支持",
@@ -695,6 +695,91 @@
       "source": "/",
       "destination": "/en",
       "permanent": false
+    },
+    {
+      "source": "/jp",
+      "destination": "/ja",
+      "permanent": true
+    },
+    {
+      "source": "/jp/:slug*",
+      "destination": "/ja/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/cn",
+      "destination": "/zh",
+      "permanent": true
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/zh/quickstart",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/zh/faq",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/:slug*",
+      "destination": "/zh/getting-started/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/setup/:slug*",
+      "destination": "/zh/setup/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/preparation/:slug*",
+      "destination": "/zh/preparation/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/launch/:slug*",
+      "destination": "/zh/launch/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/assistant/:slug*",
+      "destination": "/zh/assistant/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/practice/:slug*",
+      "destination": "/zh/practice/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/review/:slug*",
+      "destination": "/zh/review/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/settings/:slug*",
+      "destination": "/zh/settings/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/account/:slug*",
+      "destination": "/zh/account/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/:slug*",
+      "destination": "/zh/privacy/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/support/:slug*",
+      "destination": "/zh/support/:slug*",
+      "permanent": true
     }
-  ]
+  ],
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.greatoffer.ai"
+    }
+  }
 }
