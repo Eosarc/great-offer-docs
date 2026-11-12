@@ -7,6 +7,43 @@ div:has(> #chat-assistant-sheet),
   display: none !important;
 }
 
+/* Screenshot widths include the frame's 8px padding on each side. */
+.frame {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 674px;
+  padding: 8px;
+  margin-inline: auto;
+}
+
+.frame:has(img[width="520"]) {
+  max-width: 536px;
+}
+
+.frame:has(img[width="360"]) {
+  max-width: 376px;
+}
+
+.frame:has(img[width="240"]) {
+  max-width: 256px;
+}
+
+.frame img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.frame [data-component-part="frame-caption"] {
+  margin-top: 12px;
+  padding: 0;
+}
+
+.frame [data-component-part="frame-caption"] > * {
+  margin: 0;
+}
+
 /* Keep the native Mintlify attribution as the only footer item. */
 #footer {
   justify-content: flex-end;
